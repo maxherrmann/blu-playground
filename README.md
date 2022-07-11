@@ -4,7 +4,7 @@
 
 The playground exposes the [Blu API](https://github.com/maxherrmann/blu/wiki#blu-api-reference) as a global variable named `blu`, allowing you to access it from the console. Once a device has been connected, it is available as `device`.
 
-[**➡️ To the Playground**](https://maxherrmann.github.io/blu-playground/)
+[**➡️ To the Playground**](https://playground.blu.js.org/)
 
 ## Examples
 
