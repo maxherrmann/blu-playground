@@ -1,4 +1,4 @@
-import blu from "https://cdn.jsdelivr.net/gh/maxherrmann/blu@latest/dist/blu.esm.min.js"
+import blu from "https://cdn.jsdelivr.net/gh/maxherrmann/blu@1.2.0/dist/blu.esm.min.js"
 
 import examples from "./examples/examples.js"
 
