@@ -6,4 +6,8 @@ export default () => {
 		scannerConfig,
 		Device
 	)
+
+	blu.configuration.set({
+		ensureCompleteDeviceBluetoothInterface: false
+	})
 }
