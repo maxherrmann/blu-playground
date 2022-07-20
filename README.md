@@ -26,7 +26,7 @@ Here’s a list of all available examples:
 - Implementation example for a [BBC micro:bit](https://www.microbit.org/) device.
 - Implements the [default Bluetooth profile for the BBC micro:bit](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html).
 - **Implementation status**
-  - [ ] Device Information Service
+  - [x] Device Information Service
   - [ ] Accelerometer Service
   - [ ] Magnetometer Service
   - [x] Button Service

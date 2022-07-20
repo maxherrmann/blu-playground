@@ -3,6 +3,13 @@ const {
 	CharacteristicDescription
 } = blu
 
+import DeviceInformationService from "./services/device-information/deviceInformationService.js"
+import ModelNumberCharacteristic from "./services/device-information/characteristics/modelNumberCharacteristic.js"
+import SerialNumberCharacteristic from "./services/device-information/characteristics/serialNumberCharacteristic.js"
+import HardwareRevisionCharacteristic from "./services/device-information/characteristics/hardwareRevisionCharacteristic.js"
+import FirmwareRevisionCharacteristic from "./services/device-information/characteristics/firmwareRevisionCharacteristic.js"
+import ManufacturerNameCharacteristic from "./services/device-information/characteristics/manufacturerNameCharacteristic.js"
+
 import ButtonService from "./services/button/buttonService.js"
 import ButtonAStateCharacteristic from "./services/button/characteristics/buttonAStateCharacteristic.js"
 import ButtonBStateCharacteristic from "./services/button/characteristics/buttonBStateCharacteristic.js"
@@ -12,6 +19,54 @@ import TemperatureCharacteristic from "./services/temperature/characteristics/te
 import TemperaturePeriodCharacteristic from "./services/temperature/characteristics/temperaturePeriodCharacteristic.js"
 
 export default [
+	new ServiceDescription(
+		"Device Information Service",
+		"deviceInformationService",
+		DeviceInformationService,
+		"0000180a-0000-1000-8000-00805f9b34fb",
+		[
+			new CharacteristicDescription(
+				"Model Number Characteristic",
+				"modelNumberCharacteristic",
+				ModelNumberCharacteristic,
+				"00002a24-0000-1000-8000-00805f9b34fb",
+				[],
+				"R---"
+			),
+			new CharacteristicDescription(
+				"Serial Number Characteristic",
+				"serialNumberCharacteristic",
+				SerialNumberCharacteristic,
+				"00002a25-0000-1000-8000-00805f9b34fb",
+				[],
+				"R---"
+			),
+			new CharacteristicDescription(
+				"Hardware Revision Characteristic",
+				"hardwareRevisionCharacteristic",
+				HardwareRevisionCharacteristic,
+				"00002a26-0000-1000-8000-00805f9b34fb",
+				[],
+				"R---"
+			),
+			new CharacteristicDescription(
+				"Firmware Revision Characteristic",
+				"firmwareRevisionCharacteristic",
+				FirmwareRevisionCharacteristic,
+				"00002a27-0000-1000-8000-00805f9b34fb",
+				[],
+				"R---"
+			),
+			new CharacteristicDescription(
+				"Manufacturer Name Characteristic",
+				"manufacturerNameCharacteristic",
+				ManufacturerNameCharacteristic,
+				"00002a29-0000-1000-8000-00805f9b34fb",
+				[],
+				"R---"
+			)
+		]
+	),
 	new ServiceDescription(
 		"Button Service",
 		"buttonService",
