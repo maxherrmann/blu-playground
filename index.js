@@ -77,6 +77,8 @@ async function populateExampleSelect() {
 		exampleControls.innerHTML = exampleHtml
 		await loadScript(document.body, `./examples/${exampleId}/playground/index.js`)
 
+		blu.configuration.restoreDefaults()
+
 		exampleOnLoad()
 	})
 
